@@ -1,5 +1,5 @@
-tempPath = '/home/pi/Desktop/e621tag'
-#hey tib add the folder directory here please merci thank you
+tempPath = '/directory/to/folder
+#Add the temp folder directory here please merci thank you
 #make sure it doesn't end with a /
 
 tempPath += '/e6tagimage'
