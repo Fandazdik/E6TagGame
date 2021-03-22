@@ -26,7 +26,7 @@ print('N.B. If the program skips some letters while revealing them, it\'s becaus
 
 #print('N.B. Only General Tags will be included')
 
-headers = {"User-agent" : "TagHangman/1.0 (By WibbleTime on e621)"}
+headers = {"User-agent" : "TagHangman/1.0 (By WibbleTime on e926)"}
 again = True
 while again == True:
     e621String = "https://e621.net/posts.json?tags=order:random&limit=1"
@@ -40,7 +40,7 @@ while again == True:
 
     #input()
 
-    e621String2 = "https://e621.net/posts.json?tags=order:random {0}&limit={1}".format(chosen_tag, str(len(chosen_tag)-1))
+    e621String2 = "https://e926.net/posts.json?tags=order:random {0}&limit={1}".format(chosen_tag, str(len(chosen_tag)-1))
     response2 = requests.get(e621String2, headers = headers)
     response2 = response2.json()
     text2 = json.dumps(response2, indent = 4)
